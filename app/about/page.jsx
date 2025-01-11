@@ -12,7 +12,7 @@ export default function VortexDemoSecond() {
         toast.promise(
             new Promise((resolve) => setTimeout(resolve, 2000)),
             {
-                loading: 'Redirecting...',
+                loading: 'Fetching Services',
                 success: 'See Our Services',
                 error: 'Error occurred',
             }

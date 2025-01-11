@@ -31,7 +31,7 @@ export default function VortexDemoSecond() {
                 baseHue={180}
                 className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-screen h-screen">
                 <div className="absolute inset-0 bg-black/60 z-10" />
-                <h1 className="text-4xl mb-8 underline font-extrabold z-50">Our Services</h1>
+                <h1 className="text-4xl mb-8 underline font-extrabold z-50">About XLearnIon</h1>
 
                 <TextAnimate className="sm:text-3xl text-xl font-bold sm:px-20 z-50 text-center text-gray-300 leading-loose" animation="slideUp" by="word">
                     Welcome to XLearnIon, a revolutionary dApp designed to immerse you in the world of Web3. Built using Xion, our platform empowers users to explore and master Web3 concepts in a true decentralized environment. With interactive Web3 VMs and CLI tools, we bridge the gap between learning and hands-on experience, enabling you to seamlessly dive into the future of blockchain and decentralized technologies.

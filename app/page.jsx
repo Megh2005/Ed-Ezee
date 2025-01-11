@@ -12,7 +12,7 @@ export default function VortexDemoSecond() {
       new Promise((resolve) => setTimeout(resolve, 2000)),
       {
         loading: 'Redirecting...',
-        success: 'See About Page',
+        success: 'See About Us',
         error: 'Error occurred',
       }
     );

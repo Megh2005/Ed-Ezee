@@ -30,11 +30,10 @@ export default function VortexDemoSecond() {
         baseHue={180}
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-screen h-screen">
         <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
-          The hell is this?
+          XLearnIon
         </h2>
-        <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-          This is chemical burn. It&apos;ll hurt more than you&apos;ve ever been
-          burned and you&apos;ll have a scar.
+        <p className="text-white text-sm md:text-2xl max-w-6xl mt-6 capitalize text-center">
+          A Web3 learning ecosystem exclusively powered by Xion - Pay once, learn always. <br/> Learn About Web3 In Web3 Environment
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
           <button onClick={aboutHandler} className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">

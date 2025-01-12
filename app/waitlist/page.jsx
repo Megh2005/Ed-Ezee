@@ -44,7 +44,6 @@ export default function VortexDemoSecond() {
         baseHue={180}
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-screen h-screen"
       >
-        <div className="absolute inset-0 bg-black/60 z-10" />
         <form
           onSubmit={handleSubmit}
           className="relative z-50 flex flex-col items-center space-y-4"

@@ -1,27 +1,20 @@
 "use server";
 
-import { PrismaClient } from "@prisma/client";
+import { connectDB } from "@/lib/db";
+import { WaitListModel } from "@/model/WaitList";
 
 export async function joinWaitlist(emailId) {
+  await connectDB();
+
   if (!emailId) throw new Error("Email Id is required");
 
-  const prisma = new PrismaClient();
-
-  const isSubmitted = await prisma.maillist.findFirst({
-    where: {
-      email: emailId,
-    },
-  });
+  const isSubmitted = await WaitListModel.findOne({ email: emailId });
 
   if (isSubmitted) throw new Error("You are already in the waitlist");
 
-  const newMailList = await prisma.maillist.create({
-    data: {
-      email: emailId,
-    },
-  });
+  const newWaitList = await WaitListModel.create({ email: emailId });
 
-  if (!newMailList) throw new Error("Failed to add to waitlist");
+  if (!newWaitList) throw new Error("Failed to add to waitlist");
 
-  return newMailList;
+  return true;
 }

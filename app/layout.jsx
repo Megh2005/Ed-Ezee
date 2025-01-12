@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/logo.png" />
       </head>
       <body
         className={inter.className}
